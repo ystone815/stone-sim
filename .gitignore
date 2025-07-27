@@ -1,0 +1,48 @@
+# Scala/SBT build artifacts
+target/
+project/target/
+project/project/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Scala worksheets
+*.sc
+
+# SBT specific
+.sbt
+dist/*
+lib_managed/
+src_managed/
+project/boot/
+.history
+.cache
+.lib/
+
+# Chisel/Firrtl generated files
+test_run_dir/
+.fir
+firrtl_black_box_resource_files.f
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# BSP (Build Server Protocol)
+.bsp/
+
+# Coursier cache
+cs
+
+# RTL output (optional - you may want to track generated RTL)
+# rtl/
