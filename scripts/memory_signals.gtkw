@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 Configuration File
+[*]
+[dumpfile] "SimpleMemory.vcd"
+
+[timestart] 0
+[size] 1920 1080
+[pos] -1 -1
+
+# Add important signals automatically
+@28
+TOP.clock
+TOP.reset
+@29
+TOP.io_req_valid
+TOP.io_req_ready
+@22
+TOP.io_req_bits_addr[31:0]
+TOP.io_req_bits_data[31:0]
+@28
+TOP.io_req_bits_wen
+@29
+TOP.io_resp_valid
+TOP.io_resp_ready
+@22
+TOP.io_resp_bits[31:0]
+@28
+TOP.SimpleMemory.resp_valid
+@22
+TOP.SimpleMemory.resp_data[31:0]
+TOP.SimpleMemory.word_addr[29:0]
+[pattern_trace] 1
+[pattern_trace] 0

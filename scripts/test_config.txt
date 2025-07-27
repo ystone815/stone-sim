@@ -1,0 +1,24 @@
+# STONE-SIM Test Configuration
+# Modify these values to control test behavior
+
+# Default test cycles for different test types
+BASIC_CYCLES=5000
+CPU_CYCLES=3000
+MEMORY_CYCLES=2000
+PERFORMANCE_CYCLES=10000
+STRESS_CYCLES=50000
+INTERCONNECT_CYCLES=1000
+SIMTOP_CYCLES=8000
+
+# Global override (uncomment to use same cycles for all tests)
+# GLOBAL_CYCLES=10000
+
+# VCD generation settings
+ENABLE_VCD=true
+VCD_OUTPUT_DIR=test_results
+
+# Timeout settings (0 = disabled)
+TEST_TIMEOUT=0
+
+# Verbose output
+VERBOSE=false

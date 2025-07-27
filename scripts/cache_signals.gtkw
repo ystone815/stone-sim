@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 Configuration File
+[*]
+[dumpfile] "SimpleCache.vcd"
+
+[timestart] 0
+[size] 1920 1080
+[pos] -1 -1
+
+# Add important signals automatically
+@28
+TOP.clock
+TOP.reset
+@c00ff00
+# CPU Interface
+@28
+TOP.io_cpu_req_valid
+TOP.io_cpu_req_ready
+@22
+TOP.io_cpu_req_bits_addr[31:0]
+TOP.io_cpu_req_bits_data[31:0]
+@28
+TOP.io_cpu_req_bits_wen
+@29
+TOP.io_cpu_resp_valid
+@22
+TOP.io_cpu_resp_bits[31:0]
+@c00ff00
+# Memory Interface
+@28
+TOP.io_mem_req_valid
+TOP.io_mem_req_ready
+@22
+TOP.io_mem_req_bits_addr[31:0]
+@29
+TOP.io_mem_resp_valid
+TOP.io_mem_resp_ready
+@22
+TOP.io_mem_resp_bits[31:0]
+@c00ff00
+# Cache Internals
+@28
+TOP.SimpleCache.state[1:0]
+@22
+TOP.SimpleCache.hit_counter[31:0]
+TOP.SimpleCache.miss_counter[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

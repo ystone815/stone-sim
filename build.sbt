@@ -13,6 +13,8 @@ lazy val root = (project in file("."))
       "edu.berkeley.cs" %% "chiseltest" % "6.0.0" % Test,
       "org.scalatest" %% "scalatest" % "3.2.19" % Test,
     ),
+    // Verilator simulation support
+    Test / testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oSD"),
     scalacOptions ++= Seq(
       "-deprecation",
       "-feature",
